@@ -14,6 +14,13 @@
   Then alert your name using dot notation.
 */
 
+const me = {
+  name: 'Catherine', 
+  age: 27
+}
+
+alert(me.age);
+
 //Code here
 
 ////////// PROBLEM 2 //////////
@@ -23,22 +30,29 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+const favoriteThings = {
+  band: 'JOHNNYSWIM',
+  food: 'Sushi',
+  person: 'Dad',
+  book: 'Becoming',
+  movie: 'Interstellar',
+  holiday: 'Algarve, Portugal or Niseko, Japan'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
-
+favoriteThings.car = 'Porsche 911';
+favoriteThings.brand = 'Burberry';
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 ////////// PROBLEM 3 //////////
 
 /*
@@ -49,13 +63,15 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
 
-//Code here
-
+const backPack = {};
+let item = 'firstPocket';
+backPack['firstPocket'] = 'chapstick';
+backPack.color = 'blue';
 /*
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
+console.log(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -84,7 +100,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name = 'Bryan G. Smith';
+user2.email = 'bryan.smith@devmounta.in';
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
